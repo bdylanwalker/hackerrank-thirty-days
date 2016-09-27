@@ -1,0 +1,16 @@
+{
+  "name": "hackerrank-thirty-days",
+  "version": "1.0.0",
+  "description": "A project for solutions to hackerrank's 30 days of code challenge.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "hello": "./index.js"
+  },
+  "author": "B. Dylan Walker",
+  "license": "SEE LICENSE IN LICENSE",
+  "preferGlobal": true,
+  "repository": "github:bdylanwalker/hackerrank-thirty-days"
+}
