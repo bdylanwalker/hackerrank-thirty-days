@@ -1,10 +1,8 @@
 #!/usr/bin/env node
-
 //input
 //12
 //4.0
 //is the best place to learn and practice coding!
-//^D for EOF
 
 //todo:write test case
 
