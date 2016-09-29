@@ -1,21 +1,28 @@
 #!/usr/bin/env node
 
-
 //todo: write test case
 
 'use strict';
 
 //day 0
-function processData( inputString) {
-  process.stdout.write( 'Hello, World.\n');
-  process.stdout.write( inputString);
+function processData (inputString) {
+  process.stdout.write('Hello, World.\n');
+  process.stdout.write(inputString);
 
 }
 
-//process.stdin.resume();
-process.stdin.setEncoding("utf8");
+module.exports.run = function () {
 
-process.stdin.on('readable', ( _input) => {
-  processData( process.argv[2]);
+  process.stdin.resume();
+  process.stdin.setEncoding("ascii");
 
-});
+  var _input = '';
+  process.stdin.on('data', function ( input) {
+    _input += input;
+  });
+
+  process.stdin.on('end', function () {
+    processData( _input);
+
+  });
+}
