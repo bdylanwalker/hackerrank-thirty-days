@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-require('./day5').run();
+require('./day6').run();
